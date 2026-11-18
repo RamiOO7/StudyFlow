@@ -1,0 +1,23 @@
+[package]
+name = "studyflow"
+version = "1.0.0"
+description = "StudyFlow - app de estudio"
+authors = ["RamiOO7"]
+edition = "2021"
+
+[lib]
+name = "studyflow_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

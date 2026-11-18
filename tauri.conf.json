@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "StudyFlow",
+  "version": "1.0.0",
+  "identifier": "com.ramioo7.studyflow",
+  "build": { "frontendDist": "../dist" },
+  "app": {
+    "windows": [{ "title": "StudyFlow", "width": 1280, "height": 820, "minWidth": 360, "minHeight": 600, "backgroundColor": "#0b0d1a" }],
+    "security": { "csp": null }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"]
+  }
+}
